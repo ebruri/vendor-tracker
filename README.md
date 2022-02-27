@@ -1,4 +1,4 @@
-# Vendor Tracker for Pierre's Bakery 
+# Pierre's Bakery 
 
 #### By Ebru Rice
 
@@ -6,7 +6,7 @@
 
 ## Github Pages Link
 
-[Pierre's Bakery Github Pages](https://ebruri.github.io/pierres-bakery/)
+[Pierre's Bakery Github Pages](https://ebruri.github.io/vendor-tracker/)
 
 ## Technologies Used
 

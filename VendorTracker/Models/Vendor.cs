@@ -18,5 +18,9 @@ namespace VendorTracker.Models
       _instances.Add(this);
       Orders = new List<Order>{};
     }
+    public static void ClearAll()
+    {
+      _instances.Clear();
+    }
   }
 }  
