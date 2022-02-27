@@ -13,6 +13,7 @@
 * C#
 * .NET 5.0
 * ASP.NET Core
+* MSTest
 
 
 ## Description
