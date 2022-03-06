@@ -14,17 +14,22 @@ namespace VendorTracker.Controllers
       return View(allOrders);
     }
 
-    [HttpGet("/orders/new")]
-    public ActionResult New()
+    [HttpGet("/orders/{categoryId}/orders/new")]
+    public ActionResult New(int vendorId)
     {
-      return View();
+      Vendor vendor = Vendor.Find(vendorId);
+      return View(vendor);
     }
 
-    [HttpPost("/orders")]
-    public ActionResult Create(string title, string description, string price, string date)
+    [HttpGet("/vendors/{vendorId}/items/{itemId}")]
+    public ActionResult Show(int vendorId, int orderId)
     {
-      Order myOrder = new Order(title, description, price, date);
-      return RedirectToAction("Index");
+      Order order = Order.Find(orderId);
+      Vendor vendor = Vendor.Find(vendorId);
+      Dictionary<string, object> model = new Dictionary<string, object>();
+      model.Add("order", order);
+      model.Add("vendor", vendor);
+      return View(model);
     }
 
     [HttpPost("/orders/delete")]
@@ -32,13 +37,6 @@ namespace VendorTracker.Controllers
     {
       Order.ClearAll();
       return View();
-    }
-
-    [HttpGet("/orders/{id}")]
-    public ActionResult Show(int id)
-    {
-      Order theOrder = Order.Find(id);
-      return View(theOrder);
     }
   }
 }
