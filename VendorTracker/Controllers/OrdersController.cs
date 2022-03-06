@@ -14,14 +14,14 @@ namespace VendorTracker.Controllers
       return View(allOrders);
     }
 
-    [HttpGet("/orders/{categoryId}/orders/new")]
+    [HttpGet("/orders/{vendorId}/orders/new")]
     public ActionResult New(int vendorId)
     {
       Vendor vendor = Vendor.Find(vendorId);
       return View(vendor);
     }
 
-    [HttpGet("/vendors/{vendorId}/items/{itemId}")]
+    [HttpGet("/vendors/{vendorId}/orders/{orderId}")]
     public ActionResult Show(int vendorId, int orderId)
     {
       Order order = Order.Find(orderId);
