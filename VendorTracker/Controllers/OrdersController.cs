@@ -14,7 +14,7 @@ namespace VendorTracker.Controllers
       return View(allOrders);
     }
 
-    [HttpGet("/orders/{vendorId}/orders/new")]
+    [HttpGet("/vendors/{vendorId}/orders/new")]
     public ActionResult New(int vendorId)
     {
       Vendor vendor = Vendor.Find(vendorId);
