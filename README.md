@@ -1,12 +1,12 @@
-# Pierre's Bakery 
+# Pierre's Vendor Tracker 
 
 #### By Ebru Rice
 
-#### A C# program that track the vendors and their orders.
+#### A C# program that tracks the vendors and their orders.
 
 ## Github Pages Link
 
-[Pierre's Bakery Github Pages](https://ebruri.github.io/vendor-tracker/)
+[Pierre's Vendor Tracker Github Pages](https://ebruri.github.io/vendor-tracker/)
 
 ## Technologies Used
 
@@ -18,7 +18,7 @@
 
 ## Description
 
-A project for practicing C# Test Driven Development. The application takes the amount as an input from the user and returns calculated total cost. 
+A project for practicing C# Web Applications. 
 
 ## Setup/Installation Requirements
 
